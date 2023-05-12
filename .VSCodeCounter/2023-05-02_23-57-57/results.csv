@@ -1,0 +1,20 @@
+"filename", "language", "Python", "Protocol Buffers", "Log", "comment", "blank", "total"
+"e:\work\paxostest\config\__init__.py", "Python", 6, 0, 0, 0, 2, 8
+"e:\work\paxostest\config\machineinfo.py", "Python", 20, 0, 0, 0, 1, 21
+"e:\work\paxostest\config\manager.py", "Python", 32, 0, 0, 0, 11, 43
+"e:\work\paxostest\config\objects.py", "Python", 11, 0, 0, 0, 8, 19
+"e:\work\paxostest\flags.py", "Python", 10, 0, 0, 0, 2, 12
+"e:\work\paxostest\log\paxos.log", "Log", 0, 0, 2863, 0, 8, 2871
+"e:\work\paxostest\mylogging.py", "Python", 19, 0, 0, 4, 11, 34
+"e:\work\paxostest\paxos_pb2.py", "Python", 26, 0, 0, 6, 8, 40
+"e:\work\paxostest\paxos_pb2.pyi", "Python", 55, 0, 0, 0, 8, 63
+"e:\work\paxostest\paxos_pb2_grpc.py", "Python", 102, 0, 0, 20, 17, 139
+"e:\work\paxostest\pmgr.py", "Python", 98, 0, 0, 1, 21, 120
+"e:\work\paxostest\protos\paxos.proto", "Protocol Buffers", 0, 40, 0, 21, 16, 77
+"e:\work\paxostest\servicer\__init__.py", "Python", 3, 0, 0, 0, 2, 5
+"e:\work\paxostest\servicer\paxos.py", "Python", 198, 0, 0, 10, 39, 247
+"e:\work\paxostest\start.py", "Python", 35, 0, 0, 9, 13, 57
+"e:\work\paxostest\tools\__init__.py", "Python", 0, 0, 0, 0, 1, 1
+"e:\work\paxostest\tools\client.py", "Python", 22, 0, 0, 3, 8, 33
+"e:\work\paxostest\util.py", "Python", 30, 0, 0, 0, 5, 35
+"Total", "-", 667, 40, 2863, 74, 181, 3825

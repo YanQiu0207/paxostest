@@ -1,0 +1,50 @@
+Date : 2023-05-02 23:57:57
+Directory : e:\work\paxostest
+Total : 18 files,  3570 codes, 74 comments, 181 blanks, all 3825 lines
+
+Languages
++------------------+------------+------------+------------+------------+------------+
+| language         | files      | code       | comment    | blank      | total      |
++------------------+------------+------------+------------+------------+------------+
+| Log              |          1 |      2,863 |          0 |          8 |      2,871 |
+| Python           |         16 |        667 |         53 |        157 |        877 |
+| Protocol Buffers |          1 |         40 |         21 |         16 |         77 |
++------------------+------------+------------+------------+------------+------------+
+
+Directories
++-----------------------------------------+------------+------------+------------+------------+------------+
+| path                                    | files      | code       | comment    | blank      | total      |
++-----------------------------------------+------------+------------+------------+------------+------------+
+| .                                       |         18 |      3,570 |         74 |        181 |      3,825 |
+| . (Files)                               |          8 |        375 |         40 |         85 |        500 |
+| config                                  |          4 |         69 |          0 |         22 |         91 |
+| log                                     |          1 |      2,863 |          0 |          8 |      2,871 |
+| protos                                  |          1 |         40 |         21 |         16 |         77 |
+| servicer                                |          2 |        201 |         10 |         41 |        252 |
+| tools                                   |          2 |         22 |          3 |          9 |         34 |
++-----------------------------------------+------------+------------+------------+------------+------------+
+
+Files
++-----------------------------------------+------------------+------------+------------+------------+------------+
+| filename                                | language         | code       | comment    | blank      | total      |
++-----------------------------------------+------------------+------------+------------+------------+------------+
+| e:\work\paxostest\config\__init__.py    | Python           |          6 |          0 |          2 |          8 |
+| e:\work\paxostest\config\machineinfo.py | Python           |         20 |          0 |          1 |         21 |
+| e:\work\paxostest\config\manager.py     | Python           |         32 |          0 |         11 |         43 |
+| e:\work\paxostest\config\objects.py     | Python           |         11 |          0 |          8 |         19 |
+| e:\work\paxostest\flags.py              | Python           |         10 |          0 |          2 |         12 |
+| e:\work\paxostest\log\paxos.log         | Log              |      2,863 |          0 |          8 |      2,871 |
+| e:\work\paxostest\mylogging.py          | Python           |         19 |          4 |         11 |         34 |
+| e:\work\paxostest\paxos_pb2.py          | Python           |         26 |          6 |          8 |         40 |
+| e:\work\paxostest\paxos_pb2.pyi         | Python           |         55 |          0 |          8 |         63 |
+| e:\work\paxostest\paxos_pb2_grpc.py     | Python           |        102 |         20 |         17 |        139 |
+| e:\work\paxostest\pmgr.py               | Python           |         98 |          1 |         21 |        120 |
+| e:\work\paxostest\protos\paxos.proto    | Protocol Buffers |         40 |         21 |         16 |         77 |
+| e:\work\paxostest\servicer\__init__.py  | Python           |          3 |          0 |          2 |          5 |
+| e:\work\paxostest\servicer\paxos.py     | Python           |        198 |         10 |         39 |        247 |
+| e:\work\paxostest\start.py              | Python           |         35 |          9 |         13 |         57 |
+| e:\work\paxostest\tools\__init__.py     | Python           |          0 |          0 |          1 |          1 |
+| e:\work\paxostest\tools\client.py       | Python           |         22 |          3 |          8 |         33 |
+| e:\work\paxostest\util.py               | Python           |         30 |          0 |          5 |         35 |
+| Total                                   |                  |      3,570 |         74 |        181 |      3,825 |
++-----------------------------------------+------------------+------------+------------+------------+------------+

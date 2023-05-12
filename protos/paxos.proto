@@ -1,0 +1,76 @@
+// Copyright 2015 gRPC authors.
+//
+// Licensed under the Apache License, Version 2.0 (the "License");
+// you may not use this file except in compliance with the License.
+// You may obtain a copy of the License at
+//
+//     http://www.apache.org/licenses/LICENSE-2.0
+//
+// Unless required by applicable law or agreed to in writing, software
+// distributed under the License is distributed on an "AS IS" BASIS,
+// WITHOUT WARRANTIES OR CONDITIONS OF ANY KIND, either express or implied.
+// See the License for the specific language governing permissions and
+// limitations under the License.
+
+syntax = "proto3";
+
+import "google/protobuf/any.proto";
+
+option java_multiple_files = true;
+option java_package = "io.grpc.examples.paxos";
+option java_outer_classname = "PaxosProto";
+option objc_class_prefix = "PAXOS";
+
+package paxos;
+
+// python -m grpc_tools.protoc -I protos --python_out=. --pyi_out=. --grpc_python_out=. protos/paxos.proto
+
+service Paxos {
+  rpc Propose (ProposeRequest) returns (ProposeReply) {}
+  rpc Prepare (PrepareRequest) returns (PrepareReply) {}
+  rpc Accept (AcceptRequest) returns (AcceptReply) {}
+}
+
+// message ProposeRequest {
+//   string key = 1;
+//   string val = 2;
+// }
+
+// message ProposeReply {
+//   int32 result = 1;  // 0=Success, 1=Fail, 2=Unknown
+// }
+
+message ProposeRequest {
+  google.protobuf.Any key = 1;  // 键
+  google.protobuf.Any val = 2;  // 值
+}
+
+message ProposeReply {
+  int32 result = 1;  // 0=失败 1=成功 2=不确定
+}
+
+message PrepareRequest {
+  google.protobuf.Any key = 1;  // 键
+  int64 bal = 2;  // 提案编号
+}
+
+message PrepareReply {
+  google.protobuf.Any key = 1;  // 键
+  int32 result = 2;  // 0=失败 1=成功
+  int64 maxbal = 3;  // 已接受的最大提案编号
+  google.protobuf.Any maxval = 4;  // 已接受的最大提案编号对应的提议值
+}
+
+message AcceptRequest {
+  google.protobuf.Any key = 1;  // 键
+  int64 bal = 2;  // 提案编号
+  google.protobuf.Any val = 3;  // 提案编号对应的提议值
+}
+
+message AcceptReply {
+  google.protobuf.Any key = 1;  // 键
+  int32 result = 2;  // 0=失败 1=成功
+  int64 maxbal = 3;  // 已接受的最大提案编号
+  google.protobuf.Any maxval = 4;  // 已接受的最大提案编号对应的提议值
+}
+
